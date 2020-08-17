@@ -1,4 +1,4 @@
-Информация
+Вводная
 ----------
 Решение соревнования по предсказанию победителя матча в Dota 2:  
 https://www.kaggle.com/c/mlcourse-dota2-win-prediction/  
@@ -6,13 +6,13 @@ https://www.kaggle.com/c/mlcourse-dota2-win-prediction/
 
 Как запустить
 -------------
-1. Copy DotAI folder and solution_0.86399.py, solution_0.86378.py files
-2. Open solution_0.86399.py, solution_0.86378.py files and specify:
-- PATH_IN – folder with initial jsonl files
-- PATH_OUT – folder where file with predictions and generated csv's (around 400 MB) will be
-3. Run solution_0.86399.py, solution_0.86378.py files
+1. Скопируйте папку DotAI и файл solution_0.86399.py (solution_0.86378.py)
+2. Откройте файл solution_0.86399.py (solution_0.86378.py) и задайте переменные:
+- PATH_IN – папку с изначальным jsonl файлами,
+- PATH_OUT – папку, где будут находится csv с предсказаниями
+3. Запустите файл solution_0.86399.py (solution_0.86378.py)
 
-Notes
+Информация
 -------------
-All preprocessing and feature generation will be done by DotAI module.
-Feature selection and prediction will be done by logistic regression with l1-regularization on full and time-sliced (0-180 seconds) data.
+Предобработка данных и генерация признаков выполняются модулем DotAI.  
+Отбор признаков и предсказание результата осуществляется логистической регрессией с l1-регуляризацией (как на полном датасете, так и на отфильтрованном по временному срезу 0-180 секунд).
