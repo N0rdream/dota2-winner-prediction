@@ -1,4 +1,4 @@
-Вводная
+О репозитории
 ----------
 Решение соревнования по предсказанию победителя матча в Dota 2:  
 https://www.kaggle.com/c/mlcourse-dota2-win-prediction/  
